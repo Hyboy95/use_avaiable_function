@@ -8,20 +8,31 @@
 </body>
 </html>
 <script>
+  // let x = prompt('Nhập vào 1 chuỗi kí tự');
+  // let arr = x.split('');
+  // let result = [];
+  // let upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  // let lower = 'abcdefghijklmnopqrstuvwxyz';
+  // for (let i = 0; i < arr.length; i++) {
+  // if (upper.indexOf(arr[i]) !== -1) {
+  //   result.push(arr[i].toLowerCase());
+  // } else if (lower.indexOf(arr[i]) !== -1) {
+  //   result.push(arr[i].toUpperCase())
+  // } else {
+  //   result.push(arr[i]);
+  // }
+  // }
+  // document.write(`${result.join('')}`);
+
+
   let x = prompt('Nhập vào 1 chuỗi kí tự');
   let arr = x.split('');
-  let result = [];
-  let upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  let lower = 'abcdefghijklmnopqrstuvwxyz';
   for (let i = 0; i < arr.length; i++) {
-  if (upper.indexOf(arr[i]) !== -1) {
-    result.push(arr[i].toLowerCase());
-  } else if (lower.indexOf(arr[i]) !== -1) {
-    result.push(arr[i].toUpperCase())
-  } else {
-    result.push(arr[i]);
+      if (arr[i] == arr[i].toUpperCase()) {
+          arr[i] = arr[i].toLowerCase();
+      } else {
+          arr[i] = arr[i].toUpperCase()
+      }
   }
-  }
-  document.write(`${result.join('')}`);
-
+  document.write(`${arr.join('')}`);
 </script>
